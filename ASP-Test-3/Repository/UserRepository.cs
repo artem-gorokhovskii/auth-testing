@@ -1,9 +1,9 @@
-﻿using ASP_Test_3.Entity;
-using ASP_Test_3.Exceptions;
+﻿using AuthTest.Entity;
+using AuthTest.Exceptions;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ASP_Test_3.Repository
+namespace AuthTest.Repository
 {
     public class UserRepository : IUserRepository
     {

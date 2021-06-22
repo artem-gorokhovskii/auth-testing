@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net;
 
-namespace ASP_Test_3.Exceptions
+namespace AuthTest.Exceptions
 {
     [Serializable]
     public class RecordNotFoundException : CustomException

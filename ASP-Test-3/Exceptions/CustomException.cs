@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace ASP_Test_3.Exceptions
+namespace AuthTest.Exceptions
 {
     [Serializable]
     public class CustomException : ApplicationException

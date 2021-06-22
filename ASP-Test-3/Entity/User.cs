@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ASP_Test_3.Entity
+namespace AuthTest.Entity
 {
     public class User
     {

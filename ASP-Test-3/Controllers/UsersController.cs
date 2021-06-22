@@ -1,8 +1,8 @@
-﻿using ASP_Test_3.Entity;
-using ASP_Test_3.Service;
+﻿using AuthTest.Entity;
+using AuthTest.Service;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ASP_Test_3.Controllers
+namespace AuthTest.Controllers
 {
     [ApiController]
     [Route("[controller]")]

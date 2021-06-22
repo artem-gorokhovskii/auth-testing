@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth-test", "ASP-Test-3\Auth-test.csproj", "{066D8863-678A-4810-8B2F-DF7FCC7E187D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthTest", "ASP-Test-3\AuthTest.csproj", "{066D8863-678A-4810-8B2F-DF7FCC7E187D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

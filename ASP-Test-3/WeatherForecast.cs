@@ -1,6 +1,6 @@
 using System;
 
-namespace ASP_Test_3
+namespace AuthTest
 {
     public class WeatherForecast
     {
