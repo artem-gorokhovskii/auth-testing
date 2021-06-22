@@ -1,4 +1,4 @@
-using ASP_Test_3.Exceptions;
+using AuthTest.Exceptions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
@@ -8,7 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Net;
 
-namespace ASP_Test_3
+namespace AuthTest
 {
     public class Startup
     {

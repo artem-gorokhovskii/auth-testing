@@ -1,10 +1,10 @@
-﻿using ASP_Test_3.Entity;
+﻿using AuthTest.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ASP_Test_3.Repository
+namespace AuthTest.Repository
 {
     interface IUserRepository
     {

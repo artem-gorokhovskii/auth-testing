@@ -1,9 +1,9 @@
-﻿using ASP_Test_3.Entity;
-using ASP_Test_3.Exceptions;
-using ASP_Test_3.Repository;
+﻿using AuthTest.Entity;
+using AuthTest.Exceptions;
+using AuthTest.Repository;
 using System;
 
-namespace ASP_Test_3.Service
+namespace AuthTest.Service
 {
     public class UserService : IUserService
     {

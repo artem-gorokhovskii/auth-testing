@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ASP_Test_3
+namespace AuthTest
 {
     public class Program
     {

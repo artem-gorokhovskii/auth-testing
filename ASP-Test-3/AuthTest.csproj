@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Auth-test</RootNamespace>
+    <RootNamespace>AuthTest</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
