@@ -10,19 +10,23 @@ namespace AuthTest.Config
 {
     public class TokenConfig
     {
-        static TokenConfig()
-        {
-            string symmetricKey = File.ReadAllText(Path.Combine(
-                Directory.GetParent(Environment.CurrentDirectory).ToString(),
-                "Secret",
-                "TokenSecret.txt"
-            ));
-            SYMMETRIC_KEY = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(symmetricKey));
-        }
+        private static SymmetricSecurityKey symmetricKey = null;
+        public static string ISSUER = "AuthTestServer";
+        public static string AUDIENCE = "AuthTestClient";
+        public static int LIFETIME = 10; // in minutes
+        public static SymmetricSecurityKey SYMMETRIC_KEY {
+            get {
+                if (symmetricKey != null) return symmetricKey;
 
-        public static string ISSUER = "MyAuthServer";
-        public static string AUDIENCE = "MyAuthClient";
-        public static int LIFETIME = 1;
-        public static SymmetricSecurityKey SYMMETRIC_KEY = null;
+                string path = Path.GetFullPath(Path.Combine(
+                    "Secret",
+                    "TokenSecret.txt"
+                ));
+
+                symmetricKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(File.ReadAllText(path)));
+
+                return symmetricKey;
+            }
+        }
     }
 }

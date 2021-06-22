@@ -16,13 +16,12 @@ namespace AuthTest.Service
         public User GetUser(string login)
         {
             UserRepository userRepository = new UserRepository();
-            try
-            {
-                return userRepository.GetUser(login);
-            } catch
+            User user = userRepository.GetUser(login);
+            if (user == null)
             {
                 throw new RecordNotFoundException("User not found");
             }
+            return user;
         }
 
         public User[] GetUsersList()
