@@ -9,7 +9,7 @@ namespace AuthTest.Repository
     {
         private static Dictionary<string, User> users = new Dictionary<string, User>() 
         {
-            { "admin", new User("admin", "admin", "Artem", 26) }
+            { "admin", new User("admin", "admin", "Artem", 26, Role.Admin) }
         };
         public void AddUser(User user)
         {

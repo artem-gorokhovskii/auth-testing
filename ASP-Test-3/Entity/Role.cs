@@ -5,7 +5,10 @@ using System.Threading.Tasks;
 
 namespace AuthTest.Entity
 {
-    public class Role
+    public enum Role
     {
+        Unauthorized,
+        User,
+        Admin
     }
 }
