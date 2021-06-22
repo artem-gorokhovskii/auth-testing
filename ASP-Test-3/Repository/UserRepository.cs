@@ -23,7 +23,9 @@ namespace AuthTest.Repository
 
         public User GetUser(string login)
         {
-            return users[login];
+            User user;
+            users.TryGetValue(login, out user);
+            return user;
         }
 
         public User[] GetUsersList()
