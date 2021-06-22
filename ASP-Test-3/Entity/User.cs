@@ -8,13 +8,15 @@ namespace AuthTest.Entity
         private string password;
         private string name;
         private int age;
+        private Role role;
 
-        public User(string login, string password, string name, int age)
+        public User(string login, string password, string name, int age, Role? role)
         {
             this.login = login;
             this.password = password;
             this.name = name;
             this.age = age;
+            this.role = role ?? Role.User;
         }
         
         [Required]
@@ -32,5 +34,7 @@ namespace AuthTest.Entity
         [Required]
         [Range(18, 100)]
         public int Age => age;
+
+        public Role Role => role;
     }
 }
